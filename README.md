@@ -1,6 +1,6 @@
-# Unit 7: Project 1
+# Unit 7: Hooking Up in Your Hood
 
-UN data that looks at high-risk sexual activity worldwide...
+A web app that builds awareness of HIV presence and encourages safe sex by making community resources such as free condom distribution, educational videos, and free testing, easily available.
 
 ------
 DRAFT
