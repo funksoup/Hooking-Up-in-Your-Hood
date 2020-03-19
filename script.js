@@ -1,5 +1,5 @@
 var app_token = "t1Gj7NDwL5V0BYVtdnQVM0prM"
-var ZIP = 10007
+var ZIP = ""
 function ajaxCallNY(zipcode){
 $.ajax({
     url: "https://data.cityofnewyork.us/resource/72ss-25qh.json?zip_code=" + zipcode,
