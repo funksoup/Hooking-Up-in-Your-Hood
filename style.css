@@ -1,0 +1,41 @@
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+  };
+  img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+  };
+​
+  ul {list-style-type: none}
+  li::before {
+    content: "\2022"; 
+    color: grey;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em
+}
+#one {
+    margin-left: 1em;
+}
+#two {
+    margin-left: 2em;
+}
+#three {
+    margin-left: 3em;
+}
+#four {
+    margin-left: 4em;
+}
+.searchField {
+    display: inline;
+    margin-top: 100px;
+}
+#searchInput {
+    width: 50%;
+}
+.spacer {
+    height: 50px;
+}
