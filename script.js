@@ -27,9 +27,32 @@ $.ajax({
   }
 });
 }
+//condom distribution center function
+ function getCondomLocationsByZip(zip){
+  var condomURL = "https://data.cityofnewyork.us/resource/4kpn-sezh.json?Zipcode=" + zip;
+  $.get(condomURL)
+  .then(function(res) {
+    console.log(res);
+      for (var i = 0; i < 6; i++) {
+          var site = $(`
+          <div class="col s12 m6">
+              <div class="card blue-grey darken-1">
+                  <div class="card-content white-text">
+                  <span class="card-title">${res[i].facilityname}</span>
+                  <p>${res[i].address}</p>
+                  </div>
+                  </div>
+              </div>
+              </div>
+          `);
+          $("#condom-sites").append(site);
+      }
+  });
+ }
     ajaxCallNY(ZIP)
     $("#submitbutton").on("click", function(event){
         event.preventDefault();
         var userZip = $("#search-input").val().trim();
         ajaxCallNY(userZip);
+        getCondomLocationsByZip(userZip);
     })
