@@ -47,7 +47,7 @@ $.ajax({
   .then(function(res) {
     console.log(res);
     $("#condom-sites").empty();
-      for (var i = 0; i < 6; i++) {
+      for (var i = 0; i < res.length; i++) {
           var site = $(`
           <div class="col s12 m6">
               <div class="card blue-grey darken-1">
