@@ -10,6 +10,7 @@ $.ajax({
     }
 }).done(function(data) {
   console.log(data);
+  $("#zipcode").empty();
   for (var i=0; i<data.length; i++){
 
 
@@ -45,6 +46,7 @@ $.ajax({
   $.get(condomURL)
   .then(function(res) {
     console.log(res);
+    $("#condom-sites").empty();
       for (var i = 0; i < 6; i++) {
           var site = $(`
           <div class="col s12 m6">
