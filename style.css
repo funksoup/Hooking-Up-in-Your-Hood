@@ -63,7 +63,7 @@ a {
   transition: all 0.5s;
 }
 a:hover {
-  box-shadow: inset 0px -24px 0px #61b5d9;
+  box-shadow: inset 0px -24px 0px #e8eaed;
 }
 .wrapper {
   margin: 0 auto;
@@ -76,8 +76,8 @@ a:hover {
   text-overflow: ellipsis;
   white-space: nowrap;
   width: 100%;
+  color: #e8eaed;
 }
-
 
 .video-area {
   -webkit-animation-delay: 0.5s;
@@ -157,8 +157,8 @@ a:hover {
 }
 .single-video-title {
   position: absolute !important;
-  -webkit-transform: translateY(-3rem) !important;
-          transform: translateY(-3rem) !important;
+  -webkit-transform: translateY(-2.5rem) !important;
+          transform: translateY(-2.5rem) !important;
   padding: 0.75rem 1.5rem;
   transition: all 0.5s;
 }
@@ -168,15 +168,15 @@ a:hover {
   font-weight: 400;
   padding: 0.75rem 1.5rem;
   position: absolute;
-  -webkit-transform: translateY(-7rem) !important;
-          transform: translateY(-7rem) !important;
+  -webkit-transform: translateY(-5rem) !important;
+          transform: translateY(-5rem) !important;
   transition: all 0.5s;
   opacity: 0;
   width: 100%;
 }
 .next-video:hover .single-video-title {
-  -webkit-transform: translateY(-4rem) !important;
-          transform: translateY(-4em) !important;
+  -webkit-transform: translateY(-5rem) !important;
+          transform: translateY(-5em) !important;
 }
 .next-video:hover::before {
   background: rgb(33,33,33, 0.7);
@@ -198,6 +198,9 @@ a:hover {
 .clearfix:after, .wrapper:after, .video-header:after {
   clear: both;
 }
+
+
+
 @-webkit-keyframes bottomSlide {
   0% {
     -webkit-transform: translate3d(0, 100%, 0);
