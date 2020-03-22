@@ -1,5 +1,7 @@
 # Unit 7: Hooking Up in Your Hood
 
+live demo: https://github.com/funksoup/Hooking-Up-in-Your-Hood
+
 A web app that builds awareness of HIV presence and encourages safe sex by making community resources such as free condom distribution, educational videos, and free testing, easily available.
 
 ------
