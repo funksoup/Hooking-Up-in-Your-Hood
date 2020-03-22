@@ -11,9 +11,6 @@ $.ajax({
 }).done(function(data) {
   console.log(data);
   for (var i=0; i<data.length; i++){
-
-
-    
     var nyDiv = $(`<div class="col s12 m6">
                   <div class="card blue-grey darken-1">
                   <div class="card-content white-text">
@@ -24,17 +21,6 @@ $.ajax({
                   </div>
                   </div>
                   `);
-      /*var paragraphText = data[i].agency_id;
-      var phone = data[i].phone_number;
-      var weblink = data[i].website;
-      var newLink = $("<a>")
-      newLink.text(weblink);
-      newLink.attr("href", weblink);
-      
-    
-      nyDiv.append(paragraphText);
-      nyDiv.append(phone);
-      nyDiv.append(newLink);*/
       $("#zipcode").append(nyDiv);
   }
 });
