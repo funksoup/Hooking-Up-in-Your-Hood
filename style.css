@@ -67,8 +67,8 @@ a:hover {
 }
 .wrapper {
   margin: 0 auto;
-  padding: 0 1em;
-  max-width: 69rem;
+  padding: 0;
+  max-width: 75rem;
 }
 .video-title, .single-video-title, .single-video-info {
   box-sizing: border-box;
@@ -168,15 +168,15 @@ a:hover {
   font-weight: 400;
   padding: 0.75rem 1.5rem;
   position: absolute;
-  -webkit-transform: translateY(-5rem) !important;
-          transform: translateY(-5rem) !important;
+  -webkit-transform: translateY(-6.5rem) !important;
+          transform: translateY(-6.5rem) !important;
   transition: all 0.5s;
   opacity: 0;
   width: 100%;
 }
 .next-video:hover .single-video-title {
-  -webkit-transform: translateY(-5rem) !important;
-          transform: translateY(-5em) !important;
+  -webkit-transform: translateY(-5.5rem) !important;
+          transform: translateY(-5.5em) !important;
 }
 .next-video:hover::before {
   background: rgb(33,33,33, 0.7);
@@ -221,3 +221,4 @@ a:hover {
     opacity: 1;
   }
 }
+
