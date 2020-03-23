@@ -111,6 +111,22 @@ $.ajax({
       $("#neighborhood-name").empty();
       $("#HIVcases").empty();
 
+      $("#hiv-cases-hood").addClass("blue-grey darken-1 white-text");
+      // $("#neighborhood-name").addClass("card blue-grey darken-1");
+      // $("#HIVcases").addClass("card-content blue-grey darken-1 white-text");
+
+    // var nyDiv = $(`<div class="col s12 m6">
+    //               <div class="card blue-grey darken-1">
+    //               <div class="card-content white-text">
+    //               <span class"card-title">${data[i].agency_id}</span>
+    //               <p>${data[i].address}</p>
+    //               <p><a href="${data[i].website}">Website</a></p>
+    //               </div>
+    //               </div>
+    //               </div>
+    //               `);
+
+
       event.preventDefault();
 
       var userZip = $("#search-input").val();
@@ -138,6 +154,5 @@ $.ajax({
         console.log("2nd response:", response);
         // debugger;
         $("#HIVcases").append(response[0].hiv_diagnoses_num);
-           console.log("hiv cases",response[0].hiv_diagnoses_num);
       });
       });

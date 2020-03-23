@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html>
 	<head>
-<!-- Compiled and minified CSS -->
+		<!-- Compiled and minified CSS -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-<!-- Compiled and minified JavaScript -->
+		<!-- Compiled and minified JavaScript -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-<!--Bootstrap-->
+		<!--Bootstrap-->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-<!--Css-file-->
+		<!--Css-file-->
 		<link rel="stylesheet" href="style.css">
+		<!-- Google fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet">
+
 		<title>Hooking Up In Your Hood</title>
 	</head>
 	<body>
@@ -21,9 +24,9 @@
 				</div>
 				<div class="col s7">
 					<h1>Hooking Up In Your Hood</h1>
-					<h3>Are you thinking about hooking up in your hood?</h3>
+					<h4>Are you thinking about hooking up in your hood?</h4>
 					<ul>
-						<li id="one">See how common HIV is (1 in 7 people don`t know they have it yet!)</li>
+						<li id="one">See how common HIV is <strong><span style="color:#546e7a">&nbsp;(1 in 7 people don't know they have it yet!)</span></strong></li>
 						<li id="two">Locate condom distribution point</li>
 						<li id="three">Watch informative videos out protecting yourself and loved ones</li>
 						<li id="four">Find places that do free testing</li>
@@ -33,14 +36,35 @@
 			</div>
 <!--row-2-->
 			<div class="row">
-				<div class="col s12">
+				<div class="col s12 m6">
 					<div class="card">
 						<div class="card-body">
-							<h3>Number of HIV cases</h3>
-							<div id="neighborhood-name"></div>
-							<div id="HIVcases"></div>
-						</div>
-					</div>	
+							<div id="hiv-cases-hood">
+							<div class="row">
+								<div class="column">
+									<h3>Neighborhood</h3>
+									<p id="neighborhood-name"></p>
+								</div>
+								<div class="column">
+									<h3>Number of HIV Cases</h3>
+									<p id="HIVcases"></p>
+					  			</div>	    
+							</div>
+					</div>
+
+								<!-- <table class="responsive-table">
+								<thead>
+									<tr>
+										<td>Neighborhood</td>
+										<td>Number of HIV Cases</td>
+									</tr>
+									<tr>
+										<td id="neighborhood-name"></td>
+										<td id="HIVcases"></td>
+									</tr>
+								</thead>
+							</table>		 -->
+							
 				</div>
 			</div>
 <!--row-3-->
