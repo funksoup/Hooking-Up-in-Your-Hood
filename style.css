@@ -1,6 +1,5 @@
 body {
   font-family: 'Lato', sans-serif;
-
 }
 
 img{
@@ -8,23 +7,27 @@ img{
     max-width: 100%;
     height: auto;
   };
-​
-  ul {
-    font-family: 'Lato', sans-serif;
-    list-style-type: none
-  } 
 
-  li::before {
-    content: "\2022"; 
-    color: #546e7a;
-    display: inline-block; 
-    width: 1em;
-    margin-left: -1em
+ul {
+  font-family: 'Lato', sans-serif;
+  list-style-type: none
+} 
+
+li::before {
+  margin-left: -1em;
+  padding-top: .5em;
+  content: "\2022"; 
+  color: #546e7a;
+  display: inline-block; 
+  width: 1em;
+
 }
 
 h1 {
   font-family: 'Lato', sans-serif;
   font-weight: 700; 
+  padding-top: 1em;
+  padding-bottom: .5em;
   text-align: center;
 }
 
@@ -66,35 +69,43 @@ input {
   margin-bottom: -1em;
 }
 
-button {
+.btn {
   font-family: 'Lato', sans-serif;
+  background-color: #546e7a;
+  color: #fff;
 
 }
 
-
-#one {
+#bullet1 {
     font-family: 'Lato', sans-serif;
     margin-left: 1em;
+    margin-top: 2em;
 }
-#two {
+#bullet2 {
     font-family: 'Lato', sans-serif;
     margin-left: 2em;
 }
-#three {
+
+#bullet3 {
     font-family: 'Lato', sans-serif;
     margin-left: 3em;
 }
-#four {
+
+#bullet4 {
     font-family: 'Lato', sans-serif;
     margin-left: 4em;
+    margin-bottom: 4em;
 }
+
 .searchField {
     display: inline;
     margin-top: 100px;
 }
+
 #searchInput {
     width: 50%;
 }
+
 .spacer {
     height: 50px;
 }
