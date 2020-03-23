@@ -111,6 +111,9 @@ $.ajax({
       $("#neighborhood-name").empty();
       $("#HIVcases").empty();
 
+      $("#hiv-cases-hood").addClass("blue-grey darken-1 white-text");
+
+
       event.preventDefault();
 
       var userZip = $("#search-input").val();
@@ -120,8 +123,7 @@ $.ajax({
         for (var key in zipHoodData) {		
         if (zipHoodData[key].indexOf(userZip) >= 0) {
           keyZip = key;
-          console.log(keyZip);
-          // $("#neighborhood-name").append(keysToText(key));
+      
           $("#neighborhood-name").append(keyZip);
           };
         };
@@ -129,15 +131,10 @@ $.ajax({
         
         // AJAX call
         $.when(
-
         $.get(queryURL, function(response) {
-           console.log(response);
-        // $("#neighborhood-name").append(userHood);	
         }),
         ).then(function(response) {	
-        console.log("2nd response:", response);
-        // debugger;
+
         $("#HIVcases").append(response[0].hiv_diagnoses_num);
-           console.log("hiv cases",response[0].hiv_diagnoses_num);
       });
       });
