@@ -103,13 +103,20 @@ $.ajax({
       zipHoodData["Stapleton - St. George"] = ["10301", "10304", "10305"]
       zipHoodData["Willowbrook"] = ["10314"]
       zipHoodData["South Beach - Tottenville"] = ["10306", "10307", "10308", "10309", "10312"]
+    
+
+    // submit button on click event
     $("#submitbutton").on("click", function(event) {
+
+      $("#neighborhood-name").empty();
+      $("#HIVcases").empty();
+
       event.preventDefault();
-      
-      // var APIKey = "qj67cp6rjxq8k99n6r88tfnd";
+
       var userZip = $("#search-input").val();
-      console.log(userZip);
-        // iterate thru object keys 
+
+        // iterate thru object keys in zipHoodData object
+        // to match userZip with neighborhood names
         for (var key in zipHoodData) {		
         if (zipHoodData[key].indexOf(userZip) >= 0) {
           keyZip = key;
@@ -119,9 +126,10 @@ $.ajax({
           };
         };
          var queryURL = "https://data.cityofnewyork.us/resource/ykvb-493p.json?" + "neighborhood=" + keyZip + "&sex=" + "All" + "&race=" + "All" + "&year=2013" ;
+        
         // AJAX call
         $.when(
-        // Get the HTML
+
         $.get(queryURL, function(response) {
            console.log(response);
         // $("#neighborhood-name").append(userHood);	
