@@ -69,7 +69,7 @@ $.ajax({
       zipHoodData["High Bridge - Morrisania"] = ["10451", "10452", "10456"]
       zipHoodData["Hunts Point - Mott Haven"] = ["10454", "10455", "10459", "10474"]
       zipHoodData["Greenpoint"] = ["11211", "11222"]
-      zipHoodData["Downtown - Heights - Park Slope"] =["11201", "11205", "11215", "11217", "11231"]
+      zipHoodData["Downtown - Heights - Park Slope"] =["11201", "11205", "11215", "11217", "11231", "11243"]
       zipHoodData["Bedford Stuyvesant - Crown Heights"] = ["11213", "11212", "11216", "11233", "11238"]
       zipHoodData["East New York"] = ["11207", "11208"]
       zipHoodData["Sunset Park"] = ["11220", "11232"]
