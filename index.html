@@ -1,45 +1,51 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<!-- Compiled and minified CSS -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-		<!-- Compiled and minified JavaScript -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-		<!--Bootstrap-->
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-		<!--Css-file-->
-		<link rel="stylesheet" href="style.css">
-		<!-- Google fonts -->
-		<link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet">
 
-		<title>Hooking Up In Your Hood</title>
-	</head>
-	<body>
-<!--container-->
-		<div class="container">
-<!--map and introduction row -->
-			<div class="row">
-				<div class="col s5">
-					<img class="left" src="https://uploads.neatorama.com/images/posts/595/112/112595/1582818653-0.jpg" alt="New York City Neighborhoods">
-				</div>
-				<div class="col s7">
-					<h1>Hooking Up In Your Hood</h1>
-					<h4>Are you thinking about hooking up in your hood?</h4>
-					<ul>
-						<li id="one">See how common HIV is <strong><span style="color:#546e7a">&nbsp;(1 in 7 people don't know they have it yet!)</span></strong></li>
-						<li id="two">Locate condom distribution point</li>
-						<li id="three">Watch informative videos out protecting yourself and loved ones</li>
-						<li id="four">Find places that do free testing</li>
-					</ul>
-					<input id="search-input" type="text" placeholder="Enter Zip Code"><button id="submitbutton" class="btn waves-effect waves-light right" type="submit" name="action">Submit</button>
-				</div>
+<head>
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<!--Bootstrap-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<!--Css-file-->
+	<link rel="stylesheet" href="style.css">
+	<!-- Google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet">
+
+	<title>Hooking Up In Your Hood</title>
+</head>
+
+<body>
+	<!--container-->
+	<div class="container">
+		<!--map and introduction row -->
+		<div class="row">
+			<div class="col s5">
+				<img class="left" src="https://uploads.neatorama.com/images/posts/595/112/112595/1582818653-0.jpg"
+					alt="New York City Neighborhoods">
 			</div>
-<!-- neighborhood name and number of cases row -->
-			<div class="row">
-				<div class="col s12 m6">
-					<div class="card">
-						<div class="card-body">
-							<div id="hiv-cases-hood">
+			<div class="col s7">
+				<h1>Hooking Up In Your Hood</h1>
+				<h4>Are you thinking about hooking up in your hood?</h4>
+				<ul>
+					<li id="one">See how common HIV is <strong><span style="color:#546e7a">&nbsp;(1 in 7 people don't
+								know they have it yet!)</span></strong></li>
+					<li id="two">Locate condom distribution point</li>
+					<li id="three">Watch informative videos out protecting yourself and loved ones</li>
+					<li id="four">Find places that do free testing</li>
+				</ul>
+				<input id="search-input" type="text" placeholder="Enter Zip Code"><button id="submitbutton"
+					class="btn waves-effect waves-light right" type="submit" name="action">Submit</button>
+			</div>
+		</div>
+		<!-- neighborhood name and number of cases row -->
+		<div class="row">
+			<div class="col s12 m6">
+				<div class="card">
+					<div class="card-body">
+						<div id="hiv-cases-hood">
 							<div class="row">
 								<div class="column">
 									<h3>Neighborhood</h3>
@@ -48,83 +54,81 @@
 								<div class="column">
 									<h3>Number of HIV Cases</h3>
 									<p id="HIVcases"></p>
-					  			</div>	    
+								</div>
 							</div>
-					</div>	
+						</div>
+					</div>
 				</div>
-			</div>
-<!-- free condom distribution locations row -->
-			<div class="row">
-				<div class="col s12">
-					<div class="card">
-						<div class="card-body">
-							<h3>Free Condom Distribution Points</h3>
-							<div id="condom-sites"></div>
+				<!-- free condom distribution locations row -->
+				<div class="row">
+					<div class="col s12">
+						<div class="card">
+							<div class="card-body">
+								<h3>Free Condom Distribution Points</h3>
+								<div id="condom-sites"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- educational video row -->
+				<div class="row">
+					<div class="col s12">
+						<div class="card">
+							<div class="card-body" style="margin: 0; padding: 0;">
+								<section class="video-area" style="margin: 0; padding: 0;">
+									<div class="wrapper" style="margin: 0; padding: 0;">
+										<header class="video-header">
+											<h2 class="video-title"><strong>Educational Video for Better Health</strong>
+											</h2>
+										</header>
+										<div class="video-column">
+											<div class="video-player">
+												<video controls poster="Assets/image/mainImg.jpeg">
+													<source
+														src="Assets/video/Infectious-Diseases-A-Z-Sexually-transmitted-infections-on-the-rise.mp4"
+														type="video/mp4">
+												</video>
+											</div>
+										</div>
+										<div id="playlist" class="playlist">
+											<header class="next">Coming Next</header>
+											<a href="Assets/video/STIs-What-you-need-to-know.mp4" class="next-video">
+												<img src="Assets/image/STI.jpeg" alt="">
+												<h3 class="single-video-title">STD</h3>
+												<p class="single-video-info">What you need to know</p>
+											</a>
+											<a href="Assets/video/What-is-HIV.mp4" class="next-video">
+												<img src="Assets/image/HIV.jpeg" alt="">
+												<h3 class="single-video-title">HIV</h3>
+												<p class="single-video-info">What you need to know </p>
+											</a>
+											<a href="Assets/video/Condoms-How-To-Use-Them-Effectively.mp4"
+												class="next-video">
+												<img src="Assets/image/condom.jpeg" alt="">
+												<h3 class="single-video-title">Condom</h3>
+												<p class="single-video-info">Use them effectively </p>
+											</a>
+										</div>
+									</div>
+								</section>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--free testing sites row-->
+				<div class="row">
+					<div class="col s12">
+						<div class="card">
+							<div class="card-body">
+								<h3>Free Testing Sites</h3>
+								<div id="zipcode"></div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-<!-- educational video row -->
-			<div class="row">
-				<div class="col s12"> 
-					 <div class="card">
-						<div class="card-body" style="margin: 0; padding: 0;">
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+			<script src="script.js"></script>
+</body>
 
-							<section class="video-area" style="margin: 0; padding: 0;">
-
-								<div class="wrapper" style="margin: 0; padding: 0;">
-							 
-								  <header class="video-header">
-									<h2 class="video-title"><strong>Educational Video for Better Health</strong></h2>
-								  </header>
-							 
-								  <div class="video-column">
-									<div class="video-player">
-										<video controls poster="Assets/image/mainImg.jpeg">
-										  <source src="Assets/video/Infectious-Diseases-A-Z-Sexually-transmitted-infections-on-the-rise.mp4"  type="video/mp4">
-										</video>
-									</div>
-									</div>
-							
-									<div id="playlist" class="playlist">
-									  <header class="next">Coming Next</header>
-									  <a href="Assets/video/STIs-What-you-need-to-know.mp4" class="next-video">
-										<img src="Assets/image/STI.jpeg" alt="">
-										<h3 class="single-video-title">STD</h3>
-										<p class="single-video-info">What you need to know</p>
-									  </a>
-							   
-									  <a href="Assets/video/What-is-HIV.mp4" class="next-video">
-										<img src="Assets/image/HIV.jpeg" alt="">
-										<h3 class="single-video-title">HIV</h3>
-										<p class="single-video-info">What you need to know </p>
-									  </a>
-							   
-									  <a href="Assets/video/Condoms-How-To-Use-Them-Effectively.mp4" class="next-video">
-										<img src="Assets/image/condom.jpeg" alt="">
-										<h3 class="single-video-title">Condom</h3> 
-										<p class="single-video-info">Use them effectively </p> 
-									  </a> 
-									</div>
-								  </div>
-							</section>
-						</div>
-					</div> 
-				</div>	 
-			</div>
-<!--free testing sites row-->
-			<div class="row">
-				<div class="col s12">
-					<div class="card">
-						<div class="card-body">
-							<h3>Free Testing Sites</h3>
-							<div id="zipcode"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-		<script src="script.js"></script>
-	</body>
 </html>
